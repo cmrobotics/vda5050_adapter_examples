@@ -1,20 +1,20 @@
 mqtt_bridge:
   ros__parameters:
-    mqtt_address: "mosquitto"
+    mqtt_address: "172.31.61.6"
     mqtt_port: 1883
     mqtt_username: ""
     mqtt_password: ""
-    manufacturer_name: "OSRF"
-    serial_number: "TB3_1"
+    manufacturer_name: "RobotCompany"
+    serial_number: "Artemii"
 
 controller:
   ros__parameters:
-    robot_name: "TB3_1"
-    manufacturer_name: "OSRF"
-    serial_number: "TB3_1"
+    robot_name: "coalescent"
+    manufacturer_name: "RobotCompany"
+    serial_number: "Artemii"
 
 tb3_adapter:
   ros__parameters:
-    robot_name: "TB3_1"
-    manufacturer_name: "OSRF"
-    serial_number: "TB3_1"
+    robot_name: "coalescent"
+    manufacturer_name: "RobotCompany"
+    serial_number: "Artemii"
