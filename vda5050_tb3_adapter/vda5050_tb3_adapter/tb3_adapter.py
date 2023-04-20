@@ -188,7 +188,7 @@ class TB3Adapter(Node):
         order_state.agv_position = self._agv_position
         order_state.velocity = self._velocity
         response.state = order_state
-        self.logger.info("Response: {} .".format(response.state))
+        # self.logger.info("Response: {} .".format(response.state))
         return response
 
     def process_vda_action_callback(self, goal_handle):
