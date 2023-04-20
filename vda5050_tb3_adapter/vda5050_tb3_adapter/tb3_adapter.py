@@ -72,6 +72,8 @@ class TB3Adapter(Node):
         self.logger = self.get_logger()
 
         self._agv_position = VDAAGVPosition()
+        self._agv_position.position_initialized = True
+        self._agv_position.x = 2.0
         self._velocity = VDAVelocity()
         self._driving = False
 
@@ -186,6 +188,7 @@ class TB3Adapter(Node):
         order_state.agv_position = self._agv_position
         order_state.velocity = self._velocity
         response.state = order_state
+        self.logger.info( response)
         return response
 
     def process_vda_action_callback(self, goal_handle):
